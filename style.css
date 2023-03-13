@@ -1,0 +1,249 @@
+.pd30 {
+  padding: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* navber section */
+#navbar {
+  height: 70px;
+  width: 100%;
+  background-color: #be3144;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+#navbar > ul {
+  display: flex;
+  height: 100%;
+  width: 360px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  list-style: none;
+}
+
+#navbar > ul > li > a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* welcome section */
+#welcome-section {
+  height: 100vh;
+  background-color: #242426;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section > h1 {
+  line-height: 80px;
+  font-size: 60px;
+  color: #f0f0f0;
+}
+
+#welcome-section > p {
+  line-height: 40px;
+  font-size: 30px;
+  font-style: italic;
+  color: #be3144;
+  font-weight: 300;
+}
+
+/* project section */
+#projects {
+  /* height: 1400px; */
+  width: 100%;
+  background-color: #45567d;
+}
+
+#projects-title {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+#projects-title > h1 {
+  color: #f0f0f0;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+/* -project list */
+#projects-list {
+  margin-top: 60px;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.project-tile {
+  max-width: 400px;
+}
+
+.project-tile > a {
+  text-decoration: none;
+}
+
+.project-tile > a > img {
+  max-width: 400px;
+  height: 390px;
+  display: block;
+}
+
+.project-name {
+  height: 65px;
+  background-color: #303841;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0f0f0;
+}
+
+.project-name > h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.project-name > h1 > span {
+  color: orange;
+  font-size: 25px;
+}
+
+.project-hover {
+  opacity: 0;
+}
+
+.project-tile:hover .project-hover {
+  opacity: 1;
+}
+
+/* show all button */
+#show-all-href {
+  text-decoration: none;
+}
+
+#show-all-container {
+  height: 200px;
+  background-color: #45567d;
+  padding-top: 40px;
+}
+
+#show-all {
+  background-color: #303841;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#show-all:hover {
+  background-color: #be3144;
+}
+
+.fas.fa-angle-right {
+  color: white;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+/* contact section */
+#contact {
+  /* height: 100vh; */
+  background-color: #303841;
+  position: relative;
+}
+
+#contact-title {
+  padding-top: 200px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+#contact-title > h1 {
+  font-size: 50px;
+}
+
+#contact-title > p {
+  font-style: italic;
+}
+
+/* contact link */
+#contact-link {
+  padding-bottom: 350px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px 2px black;
+}
+
+#contact-link > a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 22px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  padding: 15px;
+}
+
+#contact-link > a:hover {
+  animation-name: slip-down;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slip-down {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateY(10px); 
+  }
+}
+
+/* contact footer */
+#contact-footer {
+  /* height: 140px; */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  color: #f0f0f0;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: #be3144;
+
+  font-size: 20px;
+  line-height: 25px;
+}
